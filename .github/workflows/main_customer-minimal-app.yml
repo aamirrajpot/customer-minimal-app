@@ -56,6 +56,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'customer-minimal-app'
-          slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8EA3EC4E6E8A4B6D842513CD57789952 }}
