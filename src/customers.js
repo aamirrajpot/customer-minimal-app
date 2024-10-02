@@ -23,7 +23,6 @@ const Customers = () => {
     axios
       .post('https://customersapi20241002004915.azurewebsites.net/customers', newCustomer)
       .then((response) => {
-        debugger
         setCustomers([...customers, response.data]);
         setNewCustomer({ username: '', fullName: '', email: '', dateOfBirth: '' }); // Reset form
       })
